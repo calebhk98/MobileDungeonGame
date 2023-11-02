@@ -1,0 +1,52 @@
+
+Project Title: Living Dungeon Growth Game
+
+Gameplay Mechanics Requirements:
+
+1. Core Mechanic: The living dungeon grows by consuming adventurers. When an adventurer is defeated, the dungeon absorbs their energy and expands. This growth mechanism should be the primary focus of the gameplay.
+
+2. Adventurer NPCs: Adventurers with various skills and abilities enter the dungeon at regular intervals. Their characteristics (strength, health points, etc.) should vary to enhance gameplay dynamics.
+
+3. Defeating Adventurers: Implement mechanisms for the dungeon to defeat adventurers, e.g., traps or spawnable monsters.
+
+4. Dungeon Morphing: As the dungeon grows, allow for changes in its structure. It could grow new corridors, rooms, traps, or monster spawning points.
+
+5. Level Progression: As the dungeon grows, the difficulty level should increase, bringing more skilled adventurers and providing more growth opportunities
+
+
+1. Initialization and Game Settings (init_settings.py)
+   - Initialize Pygame and set up the fundamental configurations like the game window, frames per second, etc.
+
+2. Game Assets (game_assets.py)
+   - Define or load all the game assets such as images, sounds, fonts, and more.
+   - Create classes for every type of asset such as Dungeon, Adventurer, Trap, Monster, etc. Each class should define its properties and behaviors.
+
+3. Dungeon Class (dungeon.py)
+   - Define methods to initialize and draw the dungeon and how it grows with each defeated adventurer.
+
+4. Adventurer Class (adventurer.py)
+   - Define methods to initialize the adventurers, their behaviors, abilities and how they interact with the dungeon.
+
+5. Traps/Monsters (traps_monsters.py)
+   - Define various types of traps and monsters and their interactions with adventurers.
+
+6. Game Loop (game_loop.py)
+   - This is where the game starts and runs. It should include handling events, updating the game state, drawing the game state, and pausing or ending the game.
+
+7. Event Handling (event_handling.py)
+   - Handle different kinds of user inputs (such as touch events) or game events (like an Adventurer entering the dungeon).
+
+8. Screen Updates (screen_updates.py)
+   - Update the positions, status and rendering of all objects on the screen.
+
+9. Collision Detection (collision_detection.py)
+   - Check any collisions or interactions between adventurers and the dungeon's traps or monsters.
+
+10. Game State (game_state.py)
+    - Keep track of the game state, including dungeon growth, number of defeated adventurers and game progression.
+
+11. Game Over / Win Screens (game_screens.py)
+    - Display screens for when the game ends, whether by losing or winning.
+
+12. Main (main.py)
+    - This is where the whole game is tied together and run.
