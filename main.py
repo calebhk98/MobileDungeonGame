@@ -6,7 +6,7 @@ import event_handling
 import screen_updates
 import collision_detection
 import game_state
-import game_screens
+# import game_screens
 import event_bus
 from menu import Menu
 
@@ -15,7 +15,7 @@ class LivingDungeonGame:
         pygame.init()
         self.bus=event_bus.EventBus()
         self.settings = init_settings.Settings()
-        self.assets = game_assets.Assets()
+        self.assets = game_assets.Assets("AssetFolderName")
         self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
         self.state = game_state.GameState(self.bus)
         self.game_menu = Menu(self.settings, self.assets,self.bus)

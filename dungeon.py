@@ -16,7 +16,7 @@ class Dungeon:
         self.assets=assets
         self.settings=settings
         self.tiles = [[0 for _ in range(10)] for _ in range(10)]  # A 10x10 grid initialized with zeros.
-        self.tile_image = assets.get_image("dungeon")  # Assuming you have a tile image in your assets.
+        # self.tile_image = assets.get_image("dungeon")  # Assuming you have a tile image in your assets.
 
 
     # It takes a Pygame surface as an argument, and draws the current state of the dungeon on it.
@@ -55,7 +55,7 @@ class Dungeon:
 
         return new_room  # Return the newly created
 
-    def add_trap(self):
+    def add_trap(self, trap):
         # This function is used to add a new trap to the dungeon.
         # The trap could be added in a random or predefined location, and its strength or type could also be determined based on the current state of the dungeon.
         
@@ -76,7 +76,7 @@ class Dungeon:
                 self.grid[x][y]['trap'] = Trap(x,y)
                 trap_added = True
     
-    def add_monster(self):
+    def add_monster(self, monster):
         # This function is used to add a new monster to the dungeon.
         # Similar to adding a trap, you'll need to determine where the monster is placed and what its characteristics are.
         # Assuming the dungeon is a 2D grid represented by a list of lists

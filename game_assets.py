@@ -2,7 +2,7 @@ import pygame
 
 
 class Assets:
-    def __init__(self):
+    def __init__(self, asset_folder):
         # Initialize Pygame mixer for sound loading
         pygame.mixer.init()
         self.load_images()
