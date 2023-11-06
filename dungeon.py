@@ -15,6 +15,9 @@ class Dungeon:
         self.size = 0
         self.assets=assets
         self.settings=settings
+        self.tiles = [[0 for _ in range(10)] for _ in range(10)]  # A 10x10 grid initialized with zeros.
+        self.tile_image = assets.get_image("dungeon")  # Assuming you have a tile image in your assets.
+
 
     # It takes a Pygame surface as an argument, and draws the current state of the dungeon on it.
     # The function will need to loop through all 'tiles' or 'cells' that represent dungeon and draw appropriate graphics (like walls, corridors, traps, monsters, etc.)

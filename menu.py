@@ -1,4 +1,5 @@
 import pygame
+import event_handling
 
 class Button:
     def __init__(self, text, position):
@@ -32,14 +33,15 @@ class Button:
     
 
 class Menu:
-    def __init__(self, settings, assets):
+    def __init__(self, settings, assets, bus):
         self.settings = settings
         self.assets = assets
         self.buttons = []  # We'll use buttons instead of options for touch controls
         self.current_menu = 'main'  # Default to main menu
         self.menu_stack = []  # Stack to handle sub-menus
+        self.bus=bus
 
-        button_texts = ["Start New Game", "Load Game", "Settings"]
+        button_texts = ["Start New Game", "Load Game", "Settings", "Quit"]
         for index, text in enumerate(button_texts):
             # Create a new button for each option
             # The Button class doesn't exist yet – you'll need to create it!
@@ -77,6 +79,8 @@ class Menu:
             pass  # Implement functionality here
         elif button.text == "Settings":
             pass  # Implement functionality here
+        elif button.text == "Quit":
+            self.bus.dispatch(event_handling.QuitEvent())
     
     def navigate_to(self, menu_name):
         self.menu_stack.append(self.current_menu)
