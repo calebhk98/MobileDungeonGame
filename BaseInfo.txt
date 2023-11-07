@@ -1,52 +1,49 @@
+### Game Summary: Living Dungeon Evolution
 
-Project Title: Living Dungeon Growth Game
+**Title:** Living Dungeon Growth Game
 
-Gameplay Mechanics Requirements:
+**Core Concept:**
+Players embody a living dungeon with an evolving consciousness, driven by an insatiable hunger for essence. The dungeon grows and adapts by absorbing the life force of anything that perishes within its walls.
 
-1. Core Mechanic: The living dungeon grows by consuming adventurers. When an adventurer is defeated, the dungeon absorbs their energy and expands. This growth mechanism should be the primary focus of the gameplay.
+**Gameplay Mechanics:**
 
-2. Adventurer NPCs: Adventurers with various skills and abilities enter the dungeon at regular intervals. Their characteristics (strength, health points, etc.) should vary to enhance gameplay dynamics.
+1. **Essence as a Core Mechanic:**
+   - The dungeon consumes adventurers and creatures to gain essence, which is used for growth and evolution. Essence acts as a universal currency for upgrades and magical defenses.
 
-3. Defeating Adventurers: Implement mechanisms for the dungeon to defeat adventurers, e.g., traps or spawnable monsters.
+2. **Adventurer NPCs:**
+   - Diverse adventurers with varying skills and abilities enter the dungeon. Their defeat contributes to the dungeon's growth, with stronger adventurers providing more potent essence.
 
-4. Dungeon Morphing: As the dungeon grows, allow for changes in its structure. It could grow new corridors, rooms, traps, or monster spawning points.
+3. **Dungeon Defenses:**
+   - Players can design rooms and place traps or spawn monsters to defeat adventurers. Strategic placement and choice of defenses are key to maximizing essence gain.
 
-5. Level Progression: As the dungeon grows, the difficulty level should increase, bringing more skilled adventurers and providing more growth opportunities
+4. **Dungeon Morphing:**
+   - The dungeon can expand and morph, creating new corridors, rooms, and traps. Players have control over the dungeon's layout, influencing how adventurers navigate and encounter challenges.
 
+5. **Level Progression:**
+   - As the dungeon grows, it faces more skilled adventurers. This progression system ensures a scaling challenge and opportunities for the dungeon to evolve.
 
-1. Initialization and Game Settings (init_settings.py)
-   - Initialize Pygame and set up the fundamental configurations like the game window, frames per second, etc.
+6. **Environmental Control:**
+   - Players can manipulate the environment within each room, affecting the conditions adventurers face, such as altering the climate to hinder intruders.
 
-2. Game Assets (game_assets.py)
-   - Define or load all the game assets such as images, sounds, fonts, and more.
-   - Create classes for every type of asset such as Dungeon, Adventurer, Trap, Monster, etc. Each class should define its properties and behaviors.
+7. **Resource Management:**
+   - Essence decays over time, necessitating the continuous defeat of adventurers to sustain and grow the dungeon. Strategic opening of the dungeon's door is required to balance risk and reward.
 
-3. Dungeon Class (dungeon.py)
-   - Define methods to initialize and draw the dungeon and how it grows with each defeated adventurer.
+8. **Adventurer Lure:**
+   - The dungeon emits a magical lure that attracts adventurers. Periodically opening the door is necessary to manage the build-up of magical energy and prevent negative consequences.
 
-4. Adventurer Class (adventurer.py)
-   - Define methods to initialize the adventurers, their behaviors, abilities and how they interact with the dungeon.
+9. **Endgame:**
+   - Not sure, maybe to create a new dungeon seed? 
 
-5. Traps/Monsters (traps_monsters.py)
-   - Define various types of traps and monsters and their interactions with adventurers.
+**Lore and World-Building:**
 
-6. Game Loop (game_loop.py)
-   - This is where the game starts and runs. It should include handling events, updating the game state, drawing the game state, and pausing or ending the game.
+- Unknown
 
-7. Event Handling (event_handling.py)
-   - Handle different kinds of user inputs (such as touch events) or game events (like an Adventurer entering the dungeon).
+**Gameplay Loop:**
 
-8. Screen Updates (screen_updates.py)
-   - Update the positions, status and rendering of all objects on the screen.
+- Players manage the dungeon's resources, design defenses, and strategically decide when to open the door to attract adventurers.
+- The dungeon evolves by utilizing essence to unlock new abilities, traps, monsters, and environmental effects.
+- The game progresses through time, with later times introducing tougher adventurers and more complex strategic decisions.
 
-9. Collision Detection (collision_detection.py)
-   - Check any collisions or interactions between adventurers and the dungeon's traps or monsters.
+**Victory Conditions:**
 
-10. Game State (game_state.py)
-    - Keep track of the game state, including dungeon growth, number of defeated adventurers and game progression.
-
-11. Game Over / Win Screens (game_screens.py)
-    - Display screens for when the game ends, whether by losing or winning.
-
-12. Main (main.py)
-    - This is where the whole game is tied together and run.
+- Not sure
