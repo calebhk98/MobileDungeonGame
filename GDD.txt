@@ -1,0 +1,135 @@
+# Game Design Document (GDD)
+
+## Game Overview
+
+**Title:** Living Dungeon Evolution
+
+**Genre:** Strategy / Tower Defense / RPG
+
+**Platforms:** Mobile (iOS, Android)
+
+**Target Audience:** Players who enjoy strategy, RPGs, and dungeon management simulations, ages 12 and up.
+
+**Unique Selling Points:** 
+- Unique perspective of being the dungeon, rather than the adventurer.
+- Deep strategy elements in managing resources, traps, and monsters.
+- Evolving gameplay that changes as the dungeon grows.
+
+## Gameplay Mechanics
+
+### Essence Acquisition
+- Essence is the lifeblood of the dungeon, gained from adventurers and creatures.
+- Essence quantity is based on the strength and skills of the defeated adventurers.
+- Special events or rare adventurers yield bonus essence.
+
+### NPC Adventurers
+- Adventurers come in various classes: Warriors, Mages, Thieves, Paladins, etc.
+- Each class has unique abilities and essence values.
+- Rare legendary adventurers appear with high risk and reward.
+
+### Dungeon Defenses
+- A variety of traps (spike pits, flame jets, etc.) and monsters (slimes, goblins, etc.) can be placed.
+- Defenses evolve through multiple stages, becoming more lethal and efficient.
+- Players can set patrol routes and behaviors for monsters.
+
+### Dungeon Morphing
+- Players can expand the dungeon by creating new rooms and corridors.
+- Special rooms, like treasure chambers or cursed crypts, can be constructed to lure adventurers.
+
+### Level Progression
+- The dungeon "levels up" by consuming enough essence, unlocking new defense options.
+- Higher levels attract stronger adventurers and unlock epic narrative events.
+
+### Environmental Control
+- Players can alter the environment to create advantages against adventurers (e.g., flooding rooms, igniting gas leaks).
+
+### Resource Management
+- Essence decays if not used, pressuring players to continually expand and evolve.
+- Managing the dungeon's reputation is crucial to attracting a steady stream of adventurers.
+
+### Adventurer Lure
+- The dungeon can emit a powerful lure, increasing adventurer frequency but also raising the stakes with potential hero invasions.
+
+## Story and Setting
+
+### Background Lore
+- The dungeon was born from a dark wizard's final act, cursed to hunger for essence eternally.
+
+### World Interaction
+- The dungeon's influence spreads, affecting nearby villages, altering landscapes, and becoming the stuff of legends.
+
+## Art Style
+
+### Visual Theme
+- Dark yet whimsical fantasy, invoking a sense of both dread and curiosity.
+
+### Concept Art
+- Sketches depict a living, breathing dungeon with organic walls and eerie, bioluminescent lighting.
+
+### UI/UX Design
+- A minimalist UI that is intuitive for touch controls, with drag-and-drop functionality for placing defenses.
+
+### Animation Style
+- Fluid animations that give life to both the dungeon's growth and the adventurers' movements.
+
+## Sound and Music
+
+### Sound Effects
+- A rich soundscape that heightens the eerie atmosphere of the dungeon's interior.
+- Distinctive audio cues for different traps and monster attacks.
+
+### Music
+- A dynamic soundtrack that responds to the level of danger in the dungeon, with motifs for each type of adventurer.
+
+## Technical Details
+
+### Game Engine
+- Python with Pygame for simplicity and flexibility.
+
+### Programming Languages
+- Python for all game logic and rendering.
+
+### Tools
+- Tiled for level design.
+- Audacity for sound editing.
+- Blender for any 3D assets or promotional material.
+
+## Development and Management
+
+### Milestones
+- Prototype: 2 months.
+- Alpha release: 6 months.
+- Beta release: 1 year.
+- Full release: 1.5 years.
+
+### Risk Analysis
+- Technical limitations of Pygame for mobile deployment.
+- Balancing complexity with mobile user interface limitations.
+
+### Budget
+- Initial estimate of $50,000 for the first prototype phase.
+
+### Team Structure
+- Project Manager, Game Designer, Programmer, Artist, Sound Designer, QA Tester.
+
+## Marketing and Monetization
+
+### Marketing Strategy
+- Social media campaigns targeting strategy and RPG communities.
+- Playable demo released at gaming conventions.
+
+### Monetization Model
+- Free-to-play with in-app purchases for cosmetic items and speed-ups.
+
+## Appendices
+
+### References and Inspirations
+- Games like "Dungeon Keeper" and "Dungeons" for playing the villain's perspective.
+- "Tower defense" mechanics from games such as "Plants vs. Zombies".
+
+### Glossary
+- A list of terms unique to the game's mechanics and lore.
+
+### Revision History
+- Documented changes and updates as the game evolves.
+
